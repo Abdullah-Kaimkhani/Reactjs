@@ -1,0 +1,22 @@
+.Navbar a {
+    text-decoration: none;
+    padding-right: 30px;
+    margin-bottom: 500px;
+    color: black;
+  }
+  
+  .Navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .Navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  /* .icon{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhl…xN0g2OC42MDE3WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==);
+    background-repeat: no-repeat;
+  } */

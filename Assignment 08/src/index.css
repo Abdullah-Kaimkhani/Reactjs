@@ -1,0 +1,11 @@
+.Navbar{
+  display: flex;
+}
+
+.left-nav{
+  display: flex;
+}
+
+.right-nav{
+  display: flex;
+}
