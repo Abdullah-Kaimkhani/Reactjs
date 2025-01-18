@@ -1,0 +1,13 @@
+.navbarBox {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    padding: 20px;
+    list-style-type: none;
+    background-color: black;
+}
+
+.navbarBoxList{
+    padding-right: 50px;
+    color: white;
+}
