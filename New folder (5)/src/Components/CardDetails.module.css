@@ -1,0 +1,107 @@
+.cardDetailsContainer {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cardDetailsContainer:hover {
+  transform: translateY(-5px);
+}
+
+.cardImage {
+  width: 80%;
+  max-height: 450px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cardCategory {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cardPrice {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #e91e63; /* A bold pink for emphasis */
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.cardRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ratingCount {
+  font-size: 1rem;
+  color: #888;
+  margin-left: 8px;
+}
+
+.cardDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 850px;
+  padding: 0 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.backButton {
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  background-color: #009688; /* Updated teal color */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 30%;
+}
+
+.backButton:hover {
+  background-color: #00796b;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .buttonContainer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .backButton {
+    width: 100%;
+  }
+}
