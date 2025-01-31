@@ -1,0 +1,189 @@
+.dashboard-home {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    padding: 3rem 0;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #1976d2 0%, #115293 100%);
+    color: white;
+    overflow: hidden;
+}
+
+.header-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(rgba(255,255,255,0.15), transparent);
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dashboard-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.dashboard-subtitle {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.metric-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(45deg, 
+      rgba(76,175,80,0.15) 0%,
+      rgba(76,175,80,0) 50%
+    );
+    z-index: 1;
+}
+
+.products-card::before { background: linear-gradient(45deg, rgba(76,175,80,0.15) 0%, transparent 50%); }
+.users-card::before { background: linear-gradient(45deg, rgba(33,150,243,0.15) 0%, transparent 50%); }
+.github-card::before { background: linear-gradient(45deg, rgba(255,87,34,0.15) 0%, transparent 50%); }
+
+.metric-icon {
+    font-size: 3rem;
+    color: #555;
+}
+
+.metric-content {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.metric-trend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: #28a745;
+    margin-top: 0.5rem;
+}
+
+.arrow-icon {
+    margin-left: 5px;
+    font-size: 1.2rem;
+    color: inherit;
+}
+
+.quick-actions {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.action-btn:hover {
+    background: #0056b3;
+}
+
+.action-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.product-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h4 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #555;
+}

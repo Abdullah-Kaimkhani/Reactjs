@@ -1,0 +1,141 @@
+/* Users Page Styling */
+.users-page {
+    padding: 2rem;
+  }
+  
+  .user-header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .user-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .page-description {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  .user-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .user-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .user-card-header {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .user-name {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.4rem;
+  }
+  
+  .user-username {
+    color: #7f8c8d;
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+  }
+  
+  .user-card-body {
+    padding: 1.5rem;
+  }
+  
+  .user-info {
+    margin: 0.8rem 0;
+    color: #34495e;
+    font-size: 0.95rem;
+  }
+  
+  .view-more-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .view-more-btn:hover {
+    background: #2980b9;
+  }
+  
+  /* User Detail Page Styling */
+  .user-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .user-detail-card {
+    max-width: 800px;
+    width: 100%;
+    /* Keep existing card styles */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+
+  }
+  
+  .user-detail-name {
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+  }
+  
+  .user-info-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .user-info-section h2 {
+    color: #3498db;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }

@@ -1,0 +1,217 @@
+.github-finder {
+    min-height: 100vh;
+    background: #f0f2f5;
+    font-family: 'Segoe UI', sans-serif;
+
+  }
+  
+  .finder-header {
+    background: linear-gradient(135deg, #2b3137 0%, #1a1f24 100%);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .github-icon {
+    font-size: 2.2rem;
+  }
+  
+  .search-form {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-icon {
+    color: #6a737d;
+    margin-right: 0.5rem;
+  }
+  
+  input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    outline: none;
+  }
+  
+  input::placeholder {
+    color: #6a737d;
+  }
+  
+  .search-button {
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background: #2ea043;
+  }
+  
+  .user-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  .git-header {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .user-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f0f2f5;
+  }
+  
+  .user-info h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #24292e;
+  }
+  
+  .username {
+    color: #6a737d;
+    margin: 0.5rem 0;
+  }
+  
+  .bio {
+    color: #586069;
+    line-height: 1.6;
+  }
+  
+  .user-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f6f8fa;
+    border-radius: 12px;
+  }
+  
+  .stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .stat-icon {
+    font-size: 1.5rem;
+    color: #238636;
+  }
+  
+  .stat h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #24292e;
+  }
+  
+  .stat p {
+    margin: 0;
+    color: #6a737d;
+  }
+  
+  .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #24292e;
+    padding: 0.5rem 1rem;
+    background: #f6f8fa;
+    border-radius: 8px;
+  }
+  
+  .detail a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .profile-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: #238636;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1.5rem;
+  }
+  
+  .spinner {
+    font-size: 3rem;
+    color: #238636;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .error-message {
+    background: #ffeef0;
+    color: #cb2431;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+  
+  @media (max-width: 768px) {
+    .user-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .user-stats {
+      grid-template-columns: 1fr;
+    }
+  }
