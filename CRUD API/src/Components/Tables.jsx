@@ -8,6 +8,10 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button } from '@mui/material';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -29,19 +33,19 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
-}
+export default function Tables({ userData }) {
+  const navigate = useNavigate();
+  const deleteUser = async (id) => {
+    const confirm = window.confirm('Are you sure you want to delete this user?');
+    if (confirm){
+    await axios.delete(`http://localhost:3000/users/${id}`).then((res) => {
+      location.reload();
+    }).catch((err) => {
+      console.log(err);
+    });
+};
+  }
 
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
-];
-
-export default function Tables({userData}) {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -63,8 +67,17 @@ export default function Tables({userData}) {
               <StyledTableCell align="right">{e.name}</StyledTableCell>
               <StyledTableCell align="right">{e.email}</StyledTableCell>
               <StyledTableCell align="right">{e.phone}</StyledTableCell>
-              <Button  variant='contained'>Update</Button>
-              <Button></Button>
+              <StyledTableCell align="right">
+                <Button
+                  onClick={() => {
+                    navigate(`/update/${e.id}`);
+                  }} sx={{ marginLeft: 5 }} endIcon={<EditIcon />} variant='contained'>Update</Button>
+                <Button
+                onClick={() => {
+                  deleteUser(e.id);
+                }}
+                sx={{ marginLeft: 5 }} endIcon={<DeleteIcon />} variant='contained'>Del</Button></StyledTableCell>
+
             </StyledTableRow>
           ))}
         </TableBody>
