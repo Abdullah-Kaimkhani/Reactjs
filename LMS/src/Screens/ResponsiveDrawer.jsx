@@ -23,7 +23,7 @@ import { SiGoogleclassroom } from 'react-icons/si';
 import { FaMoneyBillTransfer } from 'react-icons/fa6';
 import { MdSubject } from 'react-icons/md';
 import { Collapse } from '@mui/material';
-import AddStudent from './AddStudent';
+import AddStudent from './Student/AddStudent';
 import SyllabusForm from '../Syllabus/SyllabusForm';
 import SyllabusList from '../Syllabus/SyllabusList';
 import AddTeacher from './AddTeacher';
@@ -31,6 +31,8 @@ import AddSubject from './AddSubject';
 import ClassForm from './ClassForm';
 import FeeStructure from './FeeStructure';
 import FeeVoucher from './FeeVoucher';
+import StudentList from './Student/StudentList';
+import Update from './Student/Update';
 
 const drawerWidth = 200;
 
@@ -191,7 +193,7 @@ function ResponsiveDrawer(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                    Learning Management System
+                        Learning Management System
                     </Typography>
                 </Toolbar>
             </AppBar>
@@ -233,9 +235,12 @@ function ResponsiveDrawer(props) {
             >
                 <Toolbar />
                 {/* <h1>Dashboard</h1> */}
+
                 <Routes>
                     <Route index element={<h1>Dashboard</h1>} />
                     <Route path='/students/add' element={<AddStudent />} />
+                    <Route path='/students/list' element={<StudentList />} />
+                    <Route path='/students/update/:id' element={<Update />} />
                     <Route path='/teachers/add' element={<AddTeacher />} />
                     <Route path='/subjects/add' element={<AddSubject />} />
                     <Route path='/syllabus/syllabusform' element={<SyllabusForm />} />
