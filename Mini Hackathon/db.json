@@ -1,0 +1,84 @@
+{
+  "rooms": [
+    {
+      "id": 1,
+      "roomNo": "RM001",
+      "type": "e-markets",
+      "price": 199,
+      "status": "Available",
+      "imageSrc": "https://plus.unsplash.com/premium_photo-1661964402307-02267d1423f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww"
+    },
+    {
+      "id": 2,
+      "roomNo": "RM002",
+      "type": "supply-chains",
+      "price": 250,
+      "status": "Available",
+      "imageSrc": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww"
+    },
+    {
+      "id": 3,
+      "roomNo": "RM003",
+      "type": "applications",
+      "price": 349,
+      "status": "Available",
+      "imageSrc": "https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG90ZWwlMjByb29tfGVufDB8fDB8fHww"
+    },
+    {
+      "id": 4,
+      "roomNo": "RM004",
+      "type": "services",
+      "price": 299,
+      "status": "Available",
+      "imageSrc": "https://plus.unsplash.com/premium_photo-1675616563084-63d1f129623d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": 5,
+      "roomNo": "RM005",
+      "type": "systems",
+      "price": 449,
+      "status": "Available",
+      "imageSrc": "https://plus.unsplash.com/premium_photo-1661879252375-7c1db1932572?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": 6,
+      "roomNo": "RM006",
+      "type": "applications",
+      "price": 199,
+      "status": "Available",
+      "imageSrc": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": 7,
+      "roomNo": "RM007",
+      "type": "e-tailers",
+      "price": 399,
+      "status": "Available",
+      "imageSrc": "https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": 8,
+      "roomNo": "RM008",
+      "type": "e-tailers",
+      "price": 499,
+      "status": "Occupied",
+      "imageSrc": "https://plus.unsplash.com/premium_photo-1689609949898-5f7a10649fef?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": 9,
+      "roomNo": "RM009",
+      "type": "technologies",
+      "price": 299,
+      "status": "Available",
+      "imageSrc": "https://images.unsplash.com/photo-1631049421450-348ccd7f8949?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": 10,
+      "roomNo": "RM010",
+      "type": "models",
+      "price": 399,
+      "status": "Occupied",
+      "imageSrc": "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhvdGVsJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D"
+    }
+  ]
+}
